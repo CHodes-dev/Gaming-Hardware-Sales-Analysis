@@ -13,7 +13,9 @@ Insights and recommendations are available across several key areas:
 - Regional performance: evaluating sales by region.
 
 The data used can be viewed [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/tree/main/datasets).
+
 The workflow and framework used can be viewed here.
+
 The interactive Power BI dashboard can be downloaded [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/blob/main/docs/gamezone_dashboard.pbix).
 
 ⚠️Disclaimer: This project is part of the ‘**Portfolio Playbook**’ series uploaded by Christine Jiang on her [YouTube channel](https://www.youtube.com/@christinejiangdata). The use of the dataset and framework also follows the material she has created. However, a small adjustment has been made independently.
