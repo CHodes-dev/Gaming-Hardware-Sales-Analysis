@@ -56,7 +56,7 @@ Below are some initial findings obtained after conducting an analysis in Excel, 
 | Metric - Dimension | Insight | Relevant Team |
 | --- | --- | --- |
 | USD_PRICE - PURCHASE_TS | Total sales from 2019 to 2022 amounted to approximately $6.1M, with monthly sales ranging from $80K to $500K. | Finance |
-| USD_PRICE - PRODUCT_NAME | - The product with the best sales performance is the 27-inch 4K gaming monitor, reaching $2M. - The product with the worst sales performance is the Razer Pro Gaming Headset, with a total of $800K. - It is necessary to check for missing values ​​in the sales data in coordination with the relevant team. | Finance, Product |
+| USD_PRICE - PRODUCT_NAME | - The product with the best sales performance is the 27-inch 4K gaming monitor, reaching $2M. <br> - The product with the worst sales performance is the Razer Pro Gaming Headset, with a total of $800K. <br> - It is necessary to check for missing values ​​in the sales data in coordination with the relevant team. | Finance, Product |
 | USD_PRICE - PRODUCT_NAME| Gaming headset products (JBL Quantum 100 Gaming Headset & Razer Pro Gaming Headset) only contribute approximately 2% of total sales. | Product |
 | USD_PRICE - PURCHASE_TS | A significant surge in sales occurred in December 2020. The Fall-Winter season, leading up to the new year, was recorded as the period with the best performance. | Marketing |
 | USD_PRICE - PRODUCT_NAME | - All product types experienced a significant increase in sales from 2020 onwards, following the overall sales trend. - There was a macro-level or company-wide impact (initially presumed to be caused by COVID). | Finance |
