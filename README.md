@@ -37,8 +37,6 @@ A more detailed analysis will be discussed below to identify the underlying caus
 ### 1. Sales Trend Analysis
 - Total sales from 2019 to 2022 amounted to approximately $6.1M, with monthly sales ranging from $80K to $500K.
 - Sales more than doubled in early 2020, peaking in September and December 2020. However, sales fell significantly from January 2021 onwards.
-- Order volume
-- Average order value (AOV)
 
 ### 2. Product Performance
 - The best-selling product was the 27-inch 4K gaming monitor, which generated $2 million.
