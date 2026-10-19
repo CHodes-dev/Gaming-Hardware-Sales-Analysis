@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Once the relevant data has been obtained, it must be prepared to fulfill the standards required for further analysis. Based on Principle A "Analytical Frameworks" the data cleaning process must utilise an appropriate framework.
+Once the relevant data has been obtained, it must be prepared to fulfill the standards required for further analysis. Based on Principle A 'Analytical Frameworks' the data cleaning process must utilise an appropriate framework.
 Therefore, the framework that can be used in this process is the CLEAN Framework.
 
 ## Data Cleaning Framework
