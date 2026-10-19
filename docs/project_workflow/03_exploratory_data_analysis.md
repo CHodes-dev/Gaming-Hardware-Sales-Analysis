@@ -22,6 +22,7 @@ Essentially, this Exploratory Data Analysis (EDA) phase aims to understand the d
 ## EDA Framework
 
 To starting EDA project, we can use the SCAN Framework:
+
 **S - Stakeholder goals**: define KPIs and relevant dimensions.
 
 **C - Columns and coverage**: determine what information can be derived from the available data.
