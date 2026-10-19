@@ -1,0 +1,111 @@
+# Data Cleaning
+
+## Introduction
+
+Once the relevant data has been obtained, it must be prepared to fulfill the standards required for further analysis. Based on Principle A "Analytical Frameworks" the data cleaning process must utilise an appropriate framework.
+Therefore, the framework that can be used in this process is the CLEAN Framework.
+
+## Data Cleaning Framework
+
+**Conceptualise the data**: understand the dataset by examining metrics and dimensions, and crafting a narrative from the recorded data.
+
+**Locate solvable issues**: the first stage of data cleaning involves addressing issues that can be resolved immediately.
+
+**Evaluate unsolvable issues**: note which issues cannot be resolved and require investigation by another team, or simply leave them as they are.
+
+**Augment the data**: add new data to the existing dataset to improve the quality of the analysis.
+
+**Note and document**: record all findings and actions taken in the Issue Log.
+
+## Data Cleaning Process
+
+#### Step 1: Conceptualize the data
+
+Before proceed further, we must understand the nature of the data we have. The aim is to identify what needs to be considered and prioritised during the data cleaning process. This can be done as shown below.
+1. Create a narrative based on a single existing record, for example: User A (represented by **USER_ID**) placed an order (identified by **ORDER_ID**) on **PURCHASE_TS** and it was dispatched on **SHIP_TS**; the order consisted of **PRODUCT_NAME** with **PRODUCT_ID** at a price of **USD_PRICE** via **PURCHASE_PLATFORM**, obtained from **MARKETING_CHANNEL**, using an account created via **ACCOUNT_CREATION_METHOD** from the country **COUNTRY_CODE**.
+2. Defining the key metrics, the key metric in this project is USD_PRICE
+3. Defining the key dimensions, there are several dimensions in this project, such as PURCHASE_TS, SHIP_TS, PRODUCT_NAME, PURCHASE_PLATFORM, MARKETING_CHANNEL, ACCOUNT_CREATION_METHOD and COUNTRY_CODE.
+
+#### Step 2: Locate solvable issues
+
+The next step is to identify where the issues exist and then work out how to resolve them.
+
+Initial stages of data cleaning:
+1. Perform a quick review to detect any obvious issues
+2. Filter the data to check for outliers
+3. Document any issues found in the ‘Issue Log’
+
+This stage yields the following results.
+| Table | Columns | Issue | Row_count |
+| --- | --- | --- | --- |
+| orders | PURCHASE_TS | inconsistent date format | 10 |
+| orders | PURCHASE_TS | missing dates | 1 |
+| orders | PRODUCT_NAME | inconsistent spelling name between '27in 4K gaming monitor'  (4662 rows) and '27inches 4k gaming monitor' (61 rows) | 61 |
+| orders | USD_PRICE | missing value and 0 transactions | 34 |
+| orders | MARKETING_CHANNEL | missing value | 83 |
+| orders | ACCOUNT_CREATION_METHOD | missing value (same count as MARKETING_CHANNEL missing values) | 83 |
+| orders | COUNTRY_CODE | missing values | 37 |
+
+#### Step 3: Evaluate unsolvable issues
+
+Once the issue log has been created, it is possible to identify which issues cannot be resolved and their magnitude, can be seen in the table below.
+| Table | Columns | Issue | Row_count | Status | Magnitude |
+| --- | --- | --- | --- | --- | --- |
+| orders | PURCHASE_TS | inconsistent date format | 10 | Solvable | |
+| orders | PURCHASE_TS | missing dates | 1 | Unsolvable | 0.00% |
+| orders | PRODUCT_NAME | inconsistent spelling name between '27in 4K gaming monitor'  (4662 rows) and '27inches 4k gaming monitor' (61 rows) | 61 | Solvable | |
+| orders | USD_PRICE | missing value and 0 transactions | 34 | Unsolvable | 0.16% |
+| orders | MARKETING_CHANNEL | missing value | 83 | Solvable | |
+| orders | ACCOUNT_CREATION_METHOD | missing value (same count as MARKETING_CHANNEL missing values) | 83 | Solvable | |
+| orders | COUNTRY_CODE | missing values | 37 | Unsolvable | 0.17% |
+
+The standard used to assess magnitude is less than 20%, this figure may vary across different industries. As all unsolvable issues have a magnitude of less than 20%, they will be disregarded as they will not have a significant impact on the results of the analysis.
+
+#### Step 4: Augment the data
+
+At this stage, the quality and flexibility of the data will be improved by creating new columns as additional indicators, which will make the analysis easier later on.
+
+Data is added by:
+- Extracting data from the PURCHASE_TS column and creating new columns:
+  - PURCHASE_YEAR: the year the transaction took place
+  - PURCHASE_MONTH: the month in which the transaction took place
+- Performing calculations on the PURCHASE_TS and SHIP_TS columns to obtain new data.
+  - TIME_TO_SHIP: the time interval before the goods were dispatched
+- Adding a new column so that the customer’s country of origin, as recorded in the COUNTRY_CODE column, can be clearly identified.
+  - REGION: the name of the customer’s country of origin
+
+Once the data has been added, the quality of the data is checked first. The results can be seen in the issue log table below.
+| Table | Columns | Issue | Row_count | Status | Magnitude |
+| --- | --- | --- | --- | --- | --- |
+| orders | PURCHASE_TS | inconsistent date format | 10 | Solvable | |
+| orders | PURCHASE_TS | missing dates | 1 | Unsolvable | 0.00% |
+| orders | PRODUCT_NAME | inconsistent spelling name between '27in 4K gaming monitor'  (4662 rows) and '27inches 4k gaming monitor' (61 rows) | 61 | Solvable | |
+| orders | USD_PRICE | missing value and 0 transactions | 34 | Unsolvable | 0.16% |
+| orders | MARKETING_CHANNEL | missing value | 83 | Solvable | |
+| orders | ACCOUNT_CREATION_METHOD | missing value (same count as MARKETING_CHANNEL missing values) | 83 | Solvable | |
+| orders | COUNTRY_CODE | missing values | 37 | Unsolvable | 0.17% |
+| region | REGION | inconsistent spelling name between 'NA' (21 rows) and 'North America' (5 rows) | 5 | Solvable | |
+| region | REGION | nonsensical values 'X.x' | 2 | Solvable | |
+| region | REGION | missing values | 2 | Solvable | |
+| region | All | duplicates within order id | 145 | Unsolvable | 0.66% |
+| orders | SHIP_TS | ship timestamp before the purchase time | 2,000 | Unsolvable | 9.15% |
+
+#### Step 5: Note and document
+
+Once the issues in the data have been recorded in the Issue Log, at this stage the entries are filled in by noting down the solution for each problem identified.
+
+The final issues log table will therefore look like this.
+| Table | Columns | Issue | Row_count | Status | Magnitude | Resolution |
+| --- | --- | --- | --- | --- | --- | --- |
+| orders | PURCHASE_TS | inconsistent date format | 10 | Solvable | | used DATE function to reformat the dates correctly |
+| orders | PURCHASE_TS | missing dates | 1 | Unsolvable | 0.00% | leave it as it - low magnitude and no way to infer |
+| orders | PRODUCT_NAME | inconsistent spelling name between '27in 4K gaming monitor'  (4662 rows) and '27inches 4k gaming monitor' (61 rows) | 61 | Solvable | | recategorize to correct spelling |
+| orders | USD_PRICE | missing value and 0 transactions | 34 | Unsolvable | 0.16% | leave it as it - no way to infer, would need to check with stakeholders |
+| orders | MARKETING_CHANNEL | missing value | 83 | Solvable | | recategorize to "unknown" |
+| orders | ACCOUNT_CREATION_METHOD | missing value (same count as MARKETING_CHANNEL missing values) | 83 | Solvable | | recategorize to "unknown" |
+| orders | COUNTRY_CODE | missing values | 37 | Unsolvable | 0.17% | leave it as it - no way to infer, would need to check with stakeholders |
+| region | REGION | inconsistent spelling name between 'NA' (21 rows) and 'North America' (5 rows) | 5 | Solvable | | replacing less data with the most dominant data |
+| region | REGION | nonsensical values 'X.x' | 2 | Solvable | | filled in by looking up correct values |
+| region | REGION | missing values | 2 | Solvable | | filled in by looking up correct values |
+| region | All | duplicates within order id | 145 | Unsolvable | 0.66% | leave it as it - could delete duplicates if needed, but low volume |
+| orders | SHIP_TS | ship timestamp before the purchase time | 2,000 | Unsolvable | 9.15% | leave it as it - would need to flag if doing further analysis on ship date |
