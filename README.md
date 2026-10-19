@@ -28,27 +28,27 @@ The company’s transaction data is contained in a single table comprising 21,86
 
 ![dashboard_preview](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/blob/main/docs/images/preview_dashboard.png)
 
-As can be seen from the graph in the dashboard above or here, the company’s revenue has increased significantly since the start of 2020 before eventually falling sharply towards the end of that year and into early 2021. This increase was observed across almost all product in all regions, indicating that the company’s performance was affected by the global COVID-19 pandemic, even after the surge in cases had subsided.
+As can be seen from the graph in the dashboard above or [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/blob/main/docs/gamezone_dashboard.pbix), the company’s revenue has increased significantly since the start of 2020 before eventually falling sharply towards the end of that year and into early 2021. This increase was observed across almost all product in all regions, indicating that the company’s performance was affected by the global COVID-19 pandemic, even after the surge in cases had subsided.
 
 A more detailed analysis will be discussed below to identify the underlying causes and recommendations for action by each team within the company.
 
-### Sales Trend Analysis
+### 1. Sales Trend Analysis
 - Total sales from 2019 to 2022 amounted to approximately $6.1M, with monthly sales ranging from $80K to $500K.
 - Sales more than doubled in early 2020, peaking in September and December 2020. However, sales fell significantly from January 2021 onwards.
 - Order volume
 - Average order value (AOV)
 
-### Product Performance
+### 2. Product Performance
 - The best-selling product was the 27-inch 4K gaming monitor, which generated $2 million.
 - The worst-selling product was the Razer Pro Gaming Headset, with total sales of $800,000.
 - The 27-inch 4K gaming monitor, the Nintendo Switch and the Sony PlayStation 5 bundle were the main causes of the decline in overall sales; all three showed a similar trend of plateauing in 2021.
 - Gaming headsets (the JBL Quantum 100 Gaming Headset and the Razer Pro Gaming Headset) accounted for only around 2% of total sales.
 - December 2020 saw a significant spike in sales. The autumn–winter season leading up to the New Year was recorded as the period with the strongest performance.
 
-### Marketing Channel Performance
+### 3. Marketing Channel Performance
 - Direct sales are the main driver of high sales figures, whilst other marketing channels lag far behind.
 
-### Regional Performance
+### 4. Regional Performance
 - All product saw a significant increase in sales from 2020 onwards, in line with the overall sales trend.
 - All regions showed a similar decline in sales in 2021, indicating a global/macro trend.
 - Almost all products experienced a surge in sales in December 2020; it is worth examining any promotions or campaigns that took place during that period.
