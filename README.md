@@ -7,7 +7,7 @@ GameZone is a company that has been selling gaming hardware, both new and refurb
 The company needs to understand sales performance during the COVID-19 pandemic, from 2019 to 2021. The results of this analysis are used to evaluate the performance of each team, enabling strategic decisions to be made to improve the company’s overall performance.
 
 Insights and recommendations are available across several key areas:
-- Sales trend analysis: evaluating historical sales patterns with a focus on revenue, order volume and average order value (AOV).
+- Sales trend analysis: evaluating historical sales patterns with a focus on revenue.
 - Product performance: analysing various product lines to understand their impact on company revenue.
 - Marketing channel performance: assessing the performance of each marketing channel to identify which generates the most revenue.
 - Regional performance: evaluating sales by region.
@@ -18,7 +18,7 @@ The workflow and framework used can be viewed here.
 
 The interactive Power BI dashboard can be downloaded [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/blob/main/docs/gamezone_dashboard.pbix).
 
-⚠️Disclaimer: This project is part of the ‘**Portfolio Playbook**’ series uploaded by Christine Jiang on her [YouTube channel](https://www.youtube.com/@christinejiangdata). The use of the dataset and framework also follows the material she has created. However, a small adjustment has been made independently.
+⚠️Heads up! This project is part of the ‘**Portfolio Playbook**’ series uploaded by Christine Jiang on her [YouTube channel](https://www.youtube.com/@christinejiangdata). The use of the dataset and framework also follows the material she has created. However, adjustments were still made.
 
 ## Data Structure
 
