@@ -89,8 +89,8 @@ Recommendation:
     - Focus on promoting the 27-inch 4K gaming monitor, Nintendo Switch, and Lenovo Ideapad Gaming 3 in North America, as these items show strong market appeal.
     - Strengthen promotional efforts for the winter season by pushing the top 4 products during October or November.
 3. Data Team <br>
-  - Investigate missing values ​​in the sales data, specifically within the USD_PRICE field. 
-  - Check for missing values in the sales data.
+    - Investigate missing values ​​in the sales data, specifically within the USD_PRICE field. 
+    - Check for missing values in the sales data.
 
 #### C. Regional Insight
 
