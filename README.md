@@ -14,7 +14,7 @@ Insights and recommendations are available across several key areas:
 
 The data used can be viewed [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/tree/main/datasets).
 
-The workflow and framework used can be viewed here.
+The workflow and framework used can be viewed [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/tree/main/docs/project_workflow).
 
 The interactive Power BI dashboard can be downloaded [here](https://github.com/CHodes-dev/Gaming-Hardware-Sales-Analysis/blob/main/docs/gamezone_dashboard.pbix).
 
