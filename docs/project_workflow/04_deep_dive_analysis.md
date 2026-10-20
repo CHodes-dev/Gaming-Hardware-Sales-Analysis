@@ -26,7 +26,7 @@ North star dimensions: REGION, MARKETING_CHANNEL, PRODUCT, TIME
 North star team goals:
   - Marketing Team: How can we attract more customers or encourage them to increase their purchase volume? 
   - Product Team: Which products or features are the most popular? 
-  - Finance Team: Where is the revenue—or loss—coming from?
+  - Finance Team: Where is the revenue or loss coming from?
 
 We will use these North Star metrics to determine how to segment the data, identify which insights to prioritize, and formulate recommendations for each team.
 
@@ -50,10 +50,10 @@ To determine recommendations for each team, insights can be categorized into thr
 Stakeholder insights fall into three categories across all industries:
 1. Contextual: Insights that are useful to know, but which we cannot influence.
 2. Directional: Insights that point toward areas for further exploration; as such, it is not yet possible to draw definitive conclusions about the next steps.
-3. Actionable: Insights that are clear and realistic enough for the team to act upon.
+3. Actionable: Insights that are clear and realistic enough for the team to act upon. <br>
    These are further divided into two types:
-  - Short-term: concrete matters with clear, tangible follow-up actions.
-  - Strategic/long-term: insights that suggest a shift in direction.
+    - Short-term: concrete matters with clear, tangible follow-up actions.
+    - Strategic/long-term: insights that suggest a shift in direction.
 
 #### A. High Level Sales
 
@@ -66,9 +66,9 @@ Insight Category:
 - Contextual, It is worth noting that in early 2020, as COVID-19 cases surged and many people were sent home, individuals began spending more of their time at home including seeking out entertainment. This is why sales saw a dramatic increase during that period.
 
 Recommendation:
-1. Finance/Analytics Team
+1. Finance/Analytics Team <br>
   (Directional) Investigate further the root causes of the decline in sales during the year COVID-19 occurred, including an analysis broken down by product and region.
-2. General
+2. General <br>
   (Contextual) Given that people were spending more time at home, there was an increased demand for entertainment, which included the purchase of gaming products.
 
 #### B. Product Insight
@@ -83,12 +83,12 @@ Insight Category:
 - Actionable, findings that are immediately actionable because they relate directly to the product.
 
 Recommendation:
-1. Product Team
+1. Product Team <br>
   Remove gaming headsets (JBL Quantum 100 Gaming Headset & Razer Pro Gaming Headset) from the inventory, as they account for only 2% of overall revenue.
-2. Marketing Team:
-  - Focus on promoting the 27-inch 4K gaming monitor, Nintendo Switch, and Lenovo Ideapad Gaming 3 in North America, as these items show strong market appeal. 
-  - Strengthen promotional efforts for the winter season by pushing the top 4 products during October or November.
-3. Data Team:
+2. Marketing Team <br>
+    - Focus on promoting the 27-inch 4K gaming monitor, Nintendo Switch, and Lenovo Ideapad Gaming 3 in North America, as these items show strong market appeal.
+    - Strengthen promotional efforts for the winter season by pushing the top 4 products during October or November.
+3. Data Team <br>
   - Investigate missing values ​​in the sales data, specifically within the USD_PRICE field. 
   - Check for missing values in the sales data.
 
@@ -113,8 +113,8 @@ Category Insight:
 - Actionable, Adjustments can be implemented immediately across marketing channels with known potential.
 
 Recommendation:
-1. Data Team
+1. Data Team <br>
   Double-check that the attribution/data source for this marketing channel is correct. The direct channel figures appear to be too high.
-2. Marketing Team
+2. Marketing Team <br>
   Focus marketing strategies on the email channel, which shows potential for growth and could help reduce reliance on the "direct" channel.
   
