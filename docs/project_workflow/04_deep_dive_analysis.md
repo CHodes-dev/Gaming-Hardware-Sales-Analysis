@@ -75,7 +75,7 @@ Recommendation:
 
 | Initial insight | Deep dive insight |
 | --- | --- |
-| - The product with the best sales performance is the 27-inch 4K gaming monitor, reaching $2M. <br> - The product with the worst sales performance is the Razer Pro Gaming Headset, with a total of $800K. <br> - It is necessary to check for missing values ​​in the sales data in coordination with the relevant team. |
+| - The product with the best sales performance is the 27-inch 4K gaming monitor, reaching $2M. <br> - The product with the worst sales performance is the Razer Pro Gaming Headset, with a total of $800K. <br> - It is necessary to check for missing values ​​in the sales data in coordination with the relevant team. | The 27-inch 4K gaming monitor, Nintendo Switch, and Sony PlayStation 5 bundle are the primary drivers behind the decline in overall sales; all three exhibited a similar trend of plateauing in 2021. |
 | Gaming headset products (JBL Quantum 100 Gaming Headset & Razer Pro Gaming Headset) only contribute approximately 2% of total sales. | |
 | A significant surge in sales occurred in December 2020. The Fall-Winter season, leading up to the new year, was recorded as the period with the best performance. | |
 
@@ -89,7 +89,7 @@ Recommendation:
   - Focus on promoting the 27-inch 4K gaming monitor, Nintendo Switch, and Lenovo Ideapad Gaming 3 in North America, as these items show strong market appeal. 
   - Strengthen promotional efforts for the winter season by pushing the top 4 products during October or November.
 3. Data Team:
-  - Investigate missing values ​​in the sales data, specifically within the `USD_PRICE` field. 
+  - Investigate missing values ​​in the sales data, specifically within the USD_PRICE field. 
   - Check for missing values in the sales data.
 
 #### C. Regional Insight
