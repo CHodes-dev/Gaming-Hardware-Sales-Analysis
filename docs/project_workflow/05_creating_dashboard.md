@@ -11,22 +11,26 @@ To create a dashboard that features easy-to-understand visualizations and effect
 Using this framework makes creating a dashboard easier by providing a clearer direction.
 
 **Decision**
+
 This can be determined by answering the following questions:
 - What actions can be taken after viewing this dashboard?
 - Who is responsible for making those decisions?
 - How frequently do these decisions need to be made?
 
 **Audience**
+
 This can be determined by answering the following questions:
 - Who will be using this dashboard?
 - What level of detail do they require?
 
 **Signal**
+
 This can be determined by answering the following question:
 - What are the top 3–5 essential metrics to include?
 Select the metrics that are most important to the audience; this helps them make sound decisions and highlights our business capabilities.
 
 **Hierarchy**
+
 This can be determined by answering the following question:
 - What should the audience see first, second, and so on?
 
